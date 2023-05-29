@@ -20,8 +20,7 @@ pipeline {
    
         stage('Deploy') {
             steps {
-                bat 'mkdir carpetaDeJenkins'
-                bat 'cd carpetaDeJenkins'
+               
                 bat 'echo Este es el texto de ejemplo. > hola.txt'
                 bat 'git add .'
                 bat 'git commit -m "Mensaje del commit"'
