@@ -33,8 +33,9 @@ pipeline {
     post{
         
         failure{
-        
-                echo 'Algo no salio segun lo esperado'    
+                echo 'Pipeline completado'
+                echo '--------------------'
+                echo 'Proyecto desplegado!'    
         }
         
     }
