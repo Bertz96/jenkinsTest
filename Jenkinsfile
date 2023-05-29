@@ -19,7 +19,14 @@ pipeline {
    
         stage('Deploy') {
             steps {
-                echo 'Deploy App'
+                bat 'mkdir carpetaDeJenkins'
+                bat 'cd carpetaDeJenkins'
+                bat 'new-item hola.txt'
+                bat 'echo Este es el texto de ejemplo. > hola.txt'
+                bat 'git add .'
+                bat 'git commit -m "Mensaje del commit"'
+                bat 'git push -u origin main'
+                
             }
         }
     }
