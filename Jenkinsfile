@@ -21,7 +21,6 @@ pipeline {
             steps {
                 bat 'mkdir carpetaDeJenkins'
                 bat 'cd carpetaDeJenkins'
-                bat 'new-item hola.txt'
                 bat 'echo Este es el texto de ejemplo. > hola.txt'
                 bat 'git add .'
                 bat 'git commit -m "Mensaje del commit"'
