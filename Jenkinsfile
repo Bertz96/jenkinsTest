@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                
-                bat 'echo Este es el texto de ejemplo. > hola.txt'
+                bat 'echo texto > pruebaJenkins.txt'
                 bat 'git add .'
                 bat 'git commit -m "Mensaje del commit"'
                 bat 'git push -u origin main'
