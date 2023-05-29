@@ -14,6 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat 'npm run test'
+                echo 'todos los test fueron ejecutados'
             }
         }
    
