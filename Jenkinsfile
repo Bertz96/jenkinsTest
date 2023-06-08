@@ -22,7 +22,7 @@ pipeline {
                     def testResult = sh(returnStatus: true, script: 'npm run test:verify')
                     if (testResult == 0) {
                         echo 'Tests passed'
-
+                        echo "texto de prueba " > Success.txt
                         // Realiza el merge a la rama principal
                         git merge 'main'
                         echo 'Merge to main branch successful'
