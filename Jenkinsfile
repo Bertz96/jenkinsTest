@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                
-                bat 'cat pruebaJenkins.txt'
+                bat 'type pruebaJenkins.txt'
                 bat 'git add .'
                 bat 'git commit -m "Mensaje del commit el 8-6 a las 13:47"'
                 bat 'git push -u origin main'
