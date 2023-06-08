@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:verify": "mocha --reporter dot && mocha --reporter json | grep -E '^\\s+\"(fail|pending)\"' || exit 0"
   },
   "author": "grupo 3",
   "license": "ISC",
