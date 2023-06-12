@@ -1,7 +1,7 @@
 const assert = require("assert");
 const should = require("chai").should();
 const expect = require("chai").expect;
-const division = require("../main");
+const division = require("../division.js");
 
 describe("Prueba funcionalidad division", function () {
   it("Retorna el cociente de dos numeros", () => {
