@@ -6,15 +6,15 @@ pipeline {
             steps {
                 git branch: 'dev', url: 'https://github.com/Bertz96/jenkinsTest.git'
                 // Aquí se realiza la compilación del proyecto
-                sh 'npm install' // Instala las dependencias del proyecto
-                echo 'Build successful'
+                bat 'npm install' // Instala las dependencias del proyecto
+                echo 'Build exitosa'
             }
         }
 
         stage('Test') {
             steps {
                 // Aquí se ejecutan los casos de prueba
-                sh 'npm test' // Ejecuta los casos de prueba
+                bat 'npm test' // Ejecuta los casos de prueba
                 echo 'Tests executed'
 
                 // Verifica el resultado de los casos de prueba
