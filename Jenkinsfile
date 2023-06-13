@@ -36,6 +36,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Despliegue al repositorio
+                bat 'git merge main'
                 bat 'git add .'
                 bat 'git commit -m "Todos los test pasaron, se hizo un merge con la rama principal"'
                 bat 'git push -u origin main'
